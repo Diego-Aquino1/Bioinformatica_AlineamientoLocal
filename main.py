@@ -73,15 +73,12 @@ def save_to_file(filename, score_matrix, max_score, alignments):
 seq1 = "GTACACGT"
 seq2 = "GTTCACG"
 
-seq3 = "ACGTACTA"
-seq4 = "GTCGTAG"
+#seq3 = "acgatagcagatagcgcatagcgactagcgactgcagctacgcagcatagcagcagcagaacgatagcagatagcgcatagcgactagcgactgcagctacgcagcatagcagcagcaga"
+#seq4 = "tgagctagagatagctacgacgcatcagcgatagcagctaggcagctgcagcgactagcatgagctagagatagctacgacgcatcagcgatagcagctaggcagctgcagcgactagca"
 
-seq3 = "acgatagcagatagcgcatagcgactagcgactgcagctacgcagcatagcagcagcagaacgatagcagatagcgcatagcgactagcgactgcagctacgcagcatagcagcagcaga"
-seq4 = "tgagctagagatagctacgacgcatcagcgatagcagctaggcagctgcagcgactagcatgagctagagatagctacgacgcatcagcgatagcagctaggcagctgcagcgactagca"
-
-# seq3 = "AACGTTTACA"
-# seq4 = "AGCACACA"
+seq3 = "tcaagcgttagagaagtcat"
+seq4 = "atggaagcaa"
 
 # score_matrix, max_score, alignments = smith_waterman(seq1, seq2)
 score_matrix, max_score, alignments = smith_waterman(seq3, seq4)
-save_to_file("smith_waterman_output.txt", score_matrix, max_score, alignments)
+save_to_file("smith_waterman_output_2.txt", score_matrix, max_score, alignments)
